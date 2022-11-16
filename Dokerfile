@@ -1,0 +1,5 @@
+from java:8
+expose 8191
+add target/demo-test-0.0.1-SNAPSHOT.jar /opt/demo-test-0.0.1-SNAPSHOT.jar
+workdir /opt
+entrypoint ["java","-jar","demo-test-0.0.1-SNAPSHOT.jar"]
